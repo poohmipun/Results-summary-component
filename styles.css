@@ -1,0 +1,209 @@
+html,
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-container {
+  width: 700px;
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background: hsl(0, 0%, 100%);
+  border-radius: 30px;
+  box-shadow: 20px 20px 40px 1px hsla(234, 85%, 45%, 0.103);
+}
+
+.circle {
+  text-align: center;
+  white-space: nowrap;
+  background: linear-gradient(
+    to bottom,
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+  border-radius: 100%;
+  color: hsl(241, 100%, 89%);
+  padding: 45px 55px;
+  line-height: 1.15;
+  font-weight: 700;
+}
+
+.big-number {
+  color: white;
+  font-size: 4rem;
+  font-weight: 800;
+  margin: 0;
+}
+.left-wrapper {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  background: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
+  text-align: center;
+  border-radius: 30px;
+  color: hsl(0, 0%, 100%);
+}
+.left-wrapper p {
+  font-size: 18px;
+  margin: 0px 40px 50px 40px;
+  color: hsl(241, 100%, 89%);
+}
+
+.left-wrapper h2 {
+  margin-top: 40px;
+  color: hsl(241, 100%, 89%);
+}
+.left-wrapper h3 {
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 20px 0px 0px 0px;
+}
+.right-wrapper {
+  flex: 1;
+  height: 100%;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  background: hsl(0, 0%, 100%);
+  border-radius: 30px;
+}
+.summary {
+  margin: 15px 0px 0px 0px;
+  width: 82%;
+  justify-items: flex-start;
+}
+.wrapper {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+.my-class {
+  width: 75%;
+  display: inline-flex;
+  padding: 15px;
+  border-radius: 10px;
+  justify-content: space-between;
+}
+.my-class span {
+  font-weight: 800;
+}
+.icon {
+  display: flex;
+  justify-content: space-around;
+  gap: 14px;
+}
+.icon span {
+  font-weight: 700;
+}
+.red {
+  color: hsl(0, 100%, 67%);
+}
+.yellow {
+  color: hsl(39, 100%, 56%);
+}
+.green {
+  color: hsl(166, 100%, 37%);
+}
+.purple {
+  color: hsl(234, 85%, 45%);
+}
+#red {
+  background-color: hsla(0, 100%, 67%, 0.1);
+}
+
+#yellow {
+  background-color: hsla(39, 100%, 56%, 0.1);
+}
+
+#green {
+  background-color: hsla(166, 100%, 37%, 0.1);
+}
+
+#purple {
+  background-color: hsla(234, 85%, 45%, 0.1);
+}
+.gray {
+  margin-left: 5px;
+  color: hsl(240, 0%, 55%);
+}
+button {
+  background-color: black;
+  color: white;
+  width: 85%;
+  padding: 15px;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+button:hover {
+  background: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
+}
+
+button:focus {
+  outline: none;
+}
+
+button:active {
+  background: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
+}
+@media (max-width: 376px) {
+  .card-container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background: hsl(0, 0%, 100%);
+  }
+  .left-wrapper {
+    border-radius: 0px 0px 30px 30px;
+  }
+  .left-wrapper h3 {
+    color: white;
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin: 20px 0px 20px 0px;
+  }
+  .right-wrapper {
+    gap: 25px;
+  }
+  .wrapper {
+    gap: 20px;
+  }
+  .summary {
+    margin: 30px 0px 0px 0px;
+  }
+}
