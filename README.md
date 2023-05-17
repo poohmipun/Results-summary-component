@@ -1,5 +1,21 @@
 # Frontend Mentor - Results summary component
 
+### Title: Code Refactoring Recommendations for Improved HTML and CSS
+
+🔥HTML:
+❌ Add a main element on the page and convert the outer section into the main.
+❌ Replace the circle div with a paragraph element.
+✅ Set the alt values of icons to empty since they are decorative.
+❌ Avoid having text alone in spans or divs. Consider using a list for the results list, with spans inside each list item.
+
+🔥CSS:
+❌ Use a modern CSS reset, such as Andy Bell's.
+✅ Remove the width and height from the card container, and use max-width instead.
+✅ Avoid using font size in pixels (px).
+✅ Avoid using magic numbers and fix the missing padding on .
+✅ right-wrapper. Remove justify-items: center from .right-wrapper.
+❌ Consider using classes instead of IDs for styling the results items.
+
 ### Screenshot
 
 ![Screenshot](/assets/images/screencapture.png)
